@@ -1,0 +1,1 @@
+{\n  "name": "lumora-decor",\n  "version": "1.0.0",\n  "description": "A project for lumora-decor",\n  "dependencies": {\n    "animations": "^1.0.0",\n    "build-tools": "^1.0.0"\n  },\n  "devDependencies": {\n    "scripts": "^1.0.0"\n  },\n  "scripts": {\n    "build": "build-tools build",\n    "start": "node server.js"\n  }\n}
