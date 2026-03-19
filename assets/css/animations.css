@@ -1,0 +1,196 @@
+.fade {
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slide {
+  animation: slide 1s ease-in-out;
+}
+
+@keyframes slide {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+.zoom {
+  animation: zoom 1s ease-in-out;
+}
+
+@keyframes zoom {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  from, 20%, 50%, 80%, to { transform: translateY(0); }
+  40% { transform: translateY(-30px); }
+  60% { transform: translateY(-15px); }
+}
+
+.rotate {
+  animation: rotate 1s ease-in-out;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}
+
+.pulse {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+.flip {
+  animation: flip 1s ease-in-out;
+}
+
+@keyframes flip {
+  from { transform: rotateY(0); }
+  to { transform: rotateY(180deg); }
+}
+
+.skew {
+  animation: skew 1s ease-in-out;
+}
+
+@keyframes skew {
+  from { transform: skew(0deg); }
+  to { transform: skew(10deg); }
+}
+
+.parallax {
+  animation: parallax 1s ease-in-out;
+}
+
+@keyframes parallax {
+  from { transform: translateZ(0); }
+  to { transform: translateZ(-100px); }
+}
+
+.delay-1 {
+  animation-delay: 0.5s;
+}
+.delay-2 {
+  animation-delay: 1s;
+}
+.delay-3 {
+  animation-delay: 1.5s;
+}
+
+.duration-1 {
+  animation-duration: 0.5s;
+}
+.duration-2 {
+  animation-duration: 1s;
+}
+.duration-3 {
+  animation-duration: 1.5s;
+}
+
+.hover-effect {
+  transition: transform 0.3s ease;
+}
+.hover-effect:hover {
+  transform: scale(1.1);
+}
+
+.stagger {
+  animation: stagger 1s infinite;
+}
+
+@keyframes stagger {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(15px); }
+  100% { transform: translateY(0); }
+}
+
+.gradient {
+  background: linear-gradient(45deg, #f3ec78, #af4261);
+  animation: gradient 5s infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.wave {
+  animation: wave 1.5s infinite;
+}
+
+@keyframes wave {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(5px); }
+  50% { transform: translateX(0); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.typewriter {
+  animation: typewriter 4s steps(40, end);
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.1) 100%);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: 200px 0; }
+}
+
+.float {
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.reveal.show {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade,
+  .slide,
+  .zoom,
+  .bounce,
+  .rotate,
+  .pulse,
+  .flip,
+  .skew,
+  .parallax,
+  .stagger,
+  .shimmer,
+  .gradient {
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+  }
+}
